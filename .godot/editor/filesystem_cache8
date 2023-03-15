@@ -1,0 +1,14 @@
+2a60927148abd1d33b818b535e306557
+::res://::1678875830
+Changes.gd::GDScript::-1::1678819494::0::1::::<>Node2D<>::
+default_env.tres::Environment::4964972326311994076::1678820186::0::1::::<><>::
+FP.gd::GDScript::-1::1678820034::0::1::::<>Node2D<>::
+icon.png::CompressedTexture2D::4580520953793085967::1675944051::1678546282::1::::<><>::
+IMPACT.TTF::FontFile::4116623261867099612::1678609020::1678609020::1::::<><>::
+Lines.gd::GDScript::-1::1678819688::0::1::::<>Node2D<>::
+MenuButton.gd::GDScript::-1::1678818536::0::1::::<>MenuButton<>::
+Node2D.gd::GDScript::-1::1678546251::0::1::::<>Node2D<>::
+Node2D.tscn::PackedScene::3559299149866876452::1678820186::0::1::::<><>::res://Lines.gd<>res://Changes.gd<>res://MenuButton.gd<>res://FP.gd<>uid://bywegilh4yodo
+::res://Saves/::1678546282
+simmilarities.png::CompressedTexture2D::1011905901474079398::1676364870::1678546282::1::::<><>::
+testr.png::CompressedTexture2D::5207530174831488008::1676364809::1678546282::1::::<><>::
