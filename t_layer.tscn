@@ -1,0 +1,678 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt3obothpbm14"]
+
+[ext_resource type="Script" path="res://Scripts/TLayer.gd" id="1_yms1s"]
+[ext_resource type="Texture2D" uid="uid://gsotgyiwhux1" path="res://Frame_Icons/new.png" id="2_iv4c7"]
+[ext_resource type="Script" path="res://Scripts/IndividualFrame.gd" id="3_f7xml"]
+[ext_resource type="Texture2D" uid="uid://dgddmt5833280" path="res://Frame_Icons/empty.png" id="4_21p74"]
+
+[node name="TLayer" type="HSplitContainer"]
+script = ExtResource("1_yms1s")
+
+[node name="Layer_Name" type="LineEdit" parent="."]
+layout_mode = 2
+placeholder_text = "Layer1"
+
+[node name="Spread" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="1" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="2" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="3" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="4" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="5" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="6" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="7" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="8" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="9" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="10" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="11" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="12" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="13" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="14" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="15" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="16" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="17" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="18" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="19" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="20" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="21" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="22" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="23" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="24" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="25" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="26" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="27" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="28" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="29" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="30" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="31" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="32" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="33" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="34" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="35" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="36" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="37" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="38" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="39" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="40" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="41" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="42" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="43" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="44" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="45" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="46" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="47" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="48" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="49" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="50" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("2_iv4c7")
+script = ExtResource("3_f7xml")
+
+[node name="51" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="52" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="53" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="54" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="55" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="56" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="57" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="58" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="59" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="60" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="61" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="62" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="63" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="64" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="65" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="66" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="67" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="68" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="69" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="70" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="71" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="72" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="73" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="74" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="75" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="76" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="77" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="78" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="79" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="80" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="81" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="82" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="83" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="84" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="85" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="86" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="87" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="88" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="89" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="90" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="91" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="92" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="93" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="94" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="95" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="96" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="97" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="98" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="99" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="100" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="101" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="102" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="103" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="104" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="105" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="106" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="107" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="108" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="109" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[node name="110" type="TextureButton" parent="Spread"]
+layout_mode = 2
+texture_normal = ExtResource("4_21p74")
+script = ExtResource("3_f7xml")
+
+[connection signal="pressed" from="Spread/1" to="Spread/1" method="_on_pressed"]
+[connection signal="pressed" from="Spread/2" to="Spread/2" method="_on_pressed"]
+[connection signal="pressed" from="Spread/3" to="Spread/3" method="_on_pressed"]
+[connection signal="pressed" from="Spread/4" to="Spread/4" method="_on_pressed"]
+[connection signal="pressed" from="Spread/5" to="Spread/5" method="_on_pressed"]
+[connection signal="pressed" from="Spread/6" to="Spread/6" method="_on_pressed"]
+[connection signal="pressed" from="Spread/7" to="Spread/7" method="_on_pressed"]
+[connection signal="pressed" from="Spread/8" to="Spread/8" method="_on_pressed"]
+[connection signal="pressed" from="Spread/9" to="Spread/9" method="_on_pressed"]
+[connection signal="pressed" from="Spread/10" to="Spread/10" method="_on_pressed"]
+[connection signal="pressed" from="Spread/11" to="Spread/11" method="_on_pressed"]
+[connection signal="pressed" from="Spread/12" to="Spread/12" method="_on_pressed"]
+[connection signal="pressed" from="Spread/13" to="Spread/13" method="_on_pressed"]
+[connection signal="pressed" from="Spread/14" to="Spread/14" method="_on_pressed"]
+[connection signal="pressed" from="Spread/15" to="Spread/15" method="_on_pressed"]
+[connection signal="pressed" from="Spread/16" to="Spread/16" method="_on_pressed"]
+[connection signal="pressed" from="Spread/17" to="Spread/17" method="_on_pressed"]
+[connection signal="pressed" from="Spread/18" to="Spread/18" method="_on_pressed"]
+[connection signal="pressed" from="Spread/19" to="Spread/19" method="_on_pressed"]
+[connection signal="pressed" from="Spread/20" to="Spread/20" method="_on_pressed"]
+[connection signal="pressed" from="Spread/21" to="Spread/21" method="_on_pressed"]
+[connection signal="pressed" from="Spread/22" to="Spread/22" method="_on_pressed"]
+[connection signal="pressed" from="Spread/23" to="Spread/23" method="_on_pressed"]
+[connection signal="pressed" from="Spread/24" to="Spread/24" method="_on_pressed"]
+[connection signal="pressed" from="Spread/25" to="Spread/25" method="_on_pressed"]
+[connection signal="pressed" from="Spread/26" to="Spread/26" method="_on_pressed"]
+[connection signal="pressed" from="Spread/27" to="Spread/27" method="_on_pressed"]
+[connection signal="pressed" from="Spread/28" to="Spread/28" method="_on_pressed"]
+[connection signal="pressed" from="Spread/29" to="Spread/29" method="_on_pressed"]
+[connection signal="pressed" from="Spread/30" to="Spread/30" method="_on_pressed"]
+[connection signal="pressed" from="Spread/31" to="Spread/31" method="_on_pressed"]
+[connection signal="pressed" from="Spread/32" to="Spread/32" method="_on_pressed"]
+[connection signal="pressed" from="Spread/33" to="Spread/33" method="_on_pressed"]
+[connection signal="pressed" from="Spread/34" to="Spread/34" method="_on_pressed"]
+[connection signal="pressed" from="Spread/35" to="Spread/35" method="_on_pressed"]
+[connection signal="pressed" from="Spread/36" to="Spread/36" method="_on_pressed"]
+[connection signal="pressed" from="Spread/37" to="Spread/37" method="_on_pressed"]
+[connection signal="pressed" from="Spread/38" to="Spread/38" method="_on_pressed"]
+[connection signal="pressed" from="Spread/39" to="Spread/39" method="_on_pressed"]
+[connection signal="pressed" from="Spread/40" to="Spread/40" method="_on_pressed"]
+[connection signal="pressed" from="Spread/41" to="Spread/41" method="_on_pressed"]
+[connection signal="pressed" from="Spread/42" to="Spread/42" method="_on_pressed"]
+[connection signal="pressed" from="Spread/43" to="Spread/43" method="_on_pressed"]
+[connection signal="pressed" from="Spread/44" to="Spread/44" method="_on_pressed"]
+[connection signal="pressed" from="Spread/45" to="Spread/45" method="_on_pressed"]
+[connection signal="pressed" from="Spread/46" to="Spread/46" method="_on_pressed"]
+[connection signal="pressed" from="Spread/47" to="Spread/47" method="_on_pressed"]
+[connection signal="pressed" from="Spread/48" to="Spread/48" method="_on_pressed"]
+[connection signal="pressed" from="Spread/49" to="Spread/49" method="_on_pressed"]
+[connection signal="pressed" from="Spread/50" to="Spread/50" method="_on_pressed"]
+[connection signal="pressed" from="Spread/51" to="Spread/51" method="_on_pressed"]
+[connection signal="pressed" from="Spread/52" to="Spread/52" method="_on_pressed"]
+[connection signal="pressed" from="Spread/53" to="Spread/53" method="_on_pressed"]
+[connection signal="pressed" from="Spread/54" to="Spread/54" method="_on_pressed"]
+[connection signal="pressed" from="Spread/55" to="Spread/55" method="_on_pressed"]
+[connection signal="pressed" from="Spread/56" to="Spread/56" method="_on_pressed"]
+[connection signal="pressed" from="Spread/57" to="Spread/57" method="_on_pressed"]
+[connection signal="pressed" from="Spread/58" to="Spread/58" method="_on_pressed"]
+[connection signal="pressed" from="Spread/59" to="Spread/59" method="_on_pressed"]
+[connection signal="pressed" from="Spread/60" to="Spread/60" method="_on_pressed"]
+[connection signal="pressed" from="Spread/61" to="Spread/61" method="_on_pressed"]
+[connection signal="pressed" from="Spread/62" to="Spread/62" method="_on_pressed"]
+[connection signal="pressed" from="Spread/63" to="Spread/63" method="_on_pressed"]
+[connection signal="pressed" from="Spread/64" to="Spread/64" method="_on_pressed"]
+[connection signal="pressed" from="Spread/65" to="Spread/65" method="_on_pressed"]
+[connection signal="pressed" from="Spread/66" to="Spread/66" method="_on_pressed"]
+[connection signal="pressed" from="Spread/67" to="Spread/67" method="_on_pressed"]
+[connection signal="pressed" from="Spread/68" to="Spread/68" method="_on_pressed"]
+[connection signal="pressed" from="Spread/69" to="Spread/69" method="_on_pressed"]
+[connection signal="pressed" from="Spread/70" to="Spread/70" method="_on_pressed"]
+[connection signal="pressed" from="Spread/71" to="Spread/71" method="_on_pressed"]
+[connection signal="pressed" from="Spread/72" to="Spread/72" method="_on_pressed"]
+[connection signal="pressed" from="Spread/73" to="Spread/73" method="_on_pressed"]
+[connection signal="pressed" from="Spread/74" to="Spread/74" method="_on_pressed"]
+[connection signal="pressed" from="Spread/75" to="Spread/75" method="_on_pressed"]
+[connection signal="pressed" from="Spread/76" to="Spread/76" method="_on_pressed"]
+[connection signal="pressed" from="Spread/77" to="Spread/77" method="_on_pressed"]
+[connection signal="pressed" from="Spread/78" to="Spread/78" method="_on_pressed"]
+[connection signal="pressed" from="Spread/79" to="Spread/79" method="_on_pressed"]
+[connection signal="pressed" from="Spread/80" to="Spread/80" method="_on_pressed"]
+[connection signal="pressed" from="Spread/81" to="Spread/81" method="_on_pressed"]
+[connection signal="pressed" from="Spread/82" to="Spread/82" method="_on_pressed"]
+[connection signal="pressed" from="Spread/83" to="Spread/83" method="_on_pressed"]
+[connection signal="pressed" from="Spread/84" to="Spread/84" method="_on_pressed"]
+[connection signal="pressed" from="Spread/85" to="Spread/85" method="_on_pressed"]
+[connection signal="pressed" from="Spread/86" to="Spread/86" method="_on_pressed"]
+[connection signal="pressed" from="Spread/87" to="Spread/87" method="_on_pressed"]
+[connection signal="pressed" from="Spread/88" to="Spread/88" method="_on_pressed"]
+[connection signal="pressed" from="Spread/89" to="Spread/89" method="_on_pressed"]
+[connection signal="pressed" from="Spread/90" to="Spread/90" method="_on_pressed"]
+[connection signal="pressed" from="Spread/91" to="Spread/91" method="_on_pressed"]
+[connection signal="pressed" from="Spread/92" to="Spread/92" method="_on_pressed"]
+[connection signal="pressed" from="Spread/93" to="Spread/93" method="_on_pressed"]
+[connection signal="pressed" from="Spread/94" to="Spread/94" method="_on_pressed"]
+[connection signal="pressed" from="Spread/95" to="Spread/95" method="_on_pressed"]
+[connection signal="pressed" from="Spread/96" to="Spread/96" method="_on_pressed"]
+[connection signal="pressed" from="Spread/97" to="Spread/97" method="_on_pressed"]
+[connection signal="pressed" from="Spread/98" to="Spread/98" method="_on_pressed"]
+[connection signal="pressed" from="Spread/99" to="Spread/99" method="_on_pressed"]
+[connection signal="pressed" from="Spread/100" to="Spread/100" method="_on_pressed"]
+[connection signal="pressed" from="Spread/101" to="Spread/101" method="_on_pressed"]
+[connection signal="pressed" from="Spread/102" to="Spread/102" method="_on_pressed"]
+[connection signal="pressed" from="Spread/103" to="Spread/103" method="_on_pressed"]
+[connection signal="pressed" from="Spread/104" to="Spread/104" method="_on_pressed"]
+[connection signal="pressed" from="Spread/105" to="Spread/105" method="_on_pressed"]
+[connection signal="pressed" from="Spread/106" to="Spread/106" method="_on_pressed"]
+[connection signal="pressed" from="Spread/107" to="Spread/107" method="_on_pressed"]
+[connection signal="pressed" from="Spread/108" to="Spread/108" method="_on_pressed"]
+[connection signal="pressed" from="Spread/109" to="Spread/109" method="_on_pressed"]
+[connection signal="pressed" from="Spread/110" to="Spread/110" method="_on_pressed"]

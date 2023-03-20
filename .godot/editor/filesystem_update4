@@ -1,3 +1,14 @@
 res://default_env.tres
 res://Node2D.tscn
 res://Changes.gd
+res://Frame_Icons/empty.tres
+res://Frame_Icons/repeat.tres
+res://Frame_Icons/new.tres
+res://TLayer.gd
+res://t_layer.tscn
+res://Temps/TextureRect.gd
+res://IndividualFrame.gd
+res://Scripts/IndividualFrame.gd
+res://Scripts/GLOBAL.gd
+res://Scripts/Changes.gd
+res://frame_grid.tscn
