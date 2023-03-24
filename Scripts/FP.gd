@@ -10,9 +10,8 @@ var undo = []
 var undo_size = 30
 var redo = []
 var redo_size = 15
-@onready var father = $"../../../../.."
 @onready var tab_container = $"../../../.."
-@onready var brush_settings = $"../../../../Brush_Settings"
+@onready var brush_settings = $"../../../Brush_Settings"
 
 func _input(event):
 	_lifo()

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw0kgyu2tyfk"]
+
+[ext_resource type="Script" path="res://t_slider.gd" id="1_ky1ts"]
+[ext_resource type="PackedScene" uid="uid://y6ahotihj88w" path="res://frame_grid.tscn" id="1_tc3f8"]
+
+[node name="TSlider" type="HSplitContainer"]
+offset_right = 86.0
+offset_bottom = 24.0
+theme_override_constants/separation = 0
+dragger_visibility = 1
+script = ExtResource("1_ky1ts")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+color = Color(0.101961, 0.101961, 0.101961, 1)
+
+[node name="Slider" type="HSlider" parent="."]
+layout_mode = 2
+min_value = 1.0
+max_value = 750.0
+value = 1.0
+scrollable = false
+
+[node name="Frame_Grid" parent="Slider" instance=ExtResource("1_tc3f8")]
+layout_mode = 2
+offset_right = 12421.0
+
+[node name="Play" type="Timer" parent="."]
+
+[connection signal="value_changed" from="Slider" to="." method="_on_slider_value_changed"]
+[connection signal="timeout" from="Play" to="." method="_on_play_timeout"]

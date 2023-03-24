@@ -1,30 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4g2ixxodx7yi"]
+[gd_scene load_steps=8 format=3 uid="uid://bmit6xykpck7u"]
 
 [ext_resource type="Script" path="res://Scripts/Changes.gd" id="1_70di4"]
 [ext_resource type="Script" path="res://Scripts/MenuButton.gd" id="3_vfdue"]
-[ext_resource type="Script" path="res://Scripts/FP.gd" id="4_kdr83"]
+[ext_resource type="PackedScene" uid="uid://b238swtg4xiqq" path="res://FrameView.tscn" id="4_0q5o4"]
 [ext_resource type="FontFile" uid="uid://bywegilh4yodo" path="res://IMPACT.TTF" id="4_wxax8"]
-[ext_resource type="Texture2D" uid="uid://b6i3rmt5ac2l4" path="res://icon.png" id="6_81q0s"]
-[ext_resource type="PackedScene" uid="uid://be4ysgkeciqjd" path="res://frame_grid.tscn" id="6_nfxis"]
+[ext_resource type="Script" path="res://Scripts/Animation.gd" id="5_msl3s"]
+[ext_resource type="PackedScene" uid="uid://bw0kgyu2tyfk" path="res://t_slider.tscn" id="5_oxkbe"]
 [ext_resource type="PackedScene" uid="uid://dt3obothpbm14" path="res://t_layer.tscn" id="6_yjky3"]
 
-[sub_resource type="Gradient" id="Gradient_kr5j7"]
-offsets = PackedFloat32Array(0.280576)
-colors = PackedColorArray(0.205523, 0.448098, 1, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_4gjjt"]
-gradient = SubResource("Gradient_kr5j7")
-width = 10
-height = 20
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(0, 0)
-
-[sub_resource type="Theme" id="Theme_yqv1m"]
-default_font = ExtResource("4_wxax8")
-default_font_size = 14
-
-[node name="Node2D" type="Node2D"]
+[node name="Main" type="Node2D"]
 script = ExtResource("1_70di4")
 
 [node name="Brush_Settings" type="Control" parent="."]
@@ -32,18 +16,16 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 960.0
-offset_bottom = 541.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="Brush_Settings"]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.992
-anchor_bottom = 1.996
-offset_right = 7.67993
-offset_bottom = 0.16394
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -72,11 +54,18 @@ size = Vector2i(392, 162)
 show_hidden_files = true
 
 [node name="BrushColor" type="ColorPicker" parent="Brush_Settings"]
-layout_mode = 0
-offset_left = 1832.0
-offset_top = 392.0
-offset_right = 1984.0
-offset_bottom = 925.0
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -272.0
+offset_top = -260.0
+offset_right = -40.0
+offset_bottom = 252.0
+grow_horizontal = 0
+grow_vertical = 2
 color_modes_visible = false
 sliders_visible = false
 
@@ -93,263 +82,95 @@ rounded = true
 tick_count = 5
 ticks_on_borders = true
 
-[node name="Animation" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Animation"]
+[node name="DrawingArea" type="SubViewportContainer" parent="."]
 custom_minimum_size = Vector2(1280, 720)
-layout_mode = 0
-offset_left = 8.0
-offset_top = 31.0
-offset_right = 1288.0
-offset_bottom = 751.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 1296.0
+offset_bottom = 736.0
 
-[node name="SubViewport" type="SubViewport" parent="Animation/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="DrawingArea"]
 handle_input_locally = false
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
-[node name="0" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
+[node name="1" parent="DrawingArea/SubViewport" instance=ExtResource("4_0q5o4")]
 visible = false
-script = ExtResource("4_kdr83")
 
-[node name="1" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
-visible = false
-script = ExtResource("4_kdr83")
-
-[node name="2" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
-visible = false
-script = ExtResource("4_kdr83")
-
-[node name="3" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
-visible = false
-script = ExtResource("4_kdr83")
-
-[node name="4" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
-visible = false
-script = ExtResource("4_kdr83")
-
-[node name="5" type="Node2D" parent="Animation/SubViewportContainer/SubViewport"]
-visible = false
-script = ExtResource("4_kdr83")
-
-[node name="ColorRect" type="ColorRect" parent="Animation"]
-visible = false
-layout_mode = 0
-offset_left = 16.0
-offset_top = 768.0
-offset_right = 1296.0
-offset_bottom = 784.0
-color = Color(0.737255, 0.305882, 0.843137, 1)
-
-[node name="HSlider" type="HSlider" parent="Animation"]
-visible = false
-layout_mode = 0
-offset_left = 16.0
-offset_top = 760.0
-offset_right = 1296.0
-offset_bottom = 776.0
-theme_override_icons/grabber = SubResource("GradientTexture2D_4gjjt")
-theme_override_icons/grabber_highlight = SubResource("GradientTexture2D_4gjjt")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Animation/HSlider"]
-layout_mode = 0
-offset_top = 20.0
-offset_right = 1280.0
-offset_bottom = 40.0
-theme_override_constants/separation = 1
-
-[node name="TextureButton" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton2" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton3" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton4" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton5" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton6" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton7" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton8" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton9" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton10" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton11" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton12" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton13" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton14" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton15" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton16" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton17" type="TextureButton" parent="Animation/HSlider/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-texture_normal = ExtResource("6_81q0s")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Control" type="Control" parent="Animation"]
+[node name="Animation" type="Control" parent="."]
+layout_mode = 3
 anchors_preset = 0
 offset_top = 752.0
 offset_right = 1288.0
 offset_bottom = 1080.0
+script = ExtResource("5_msl3s")
 
-[node name="Label" type="Label" parent="Animation/Control"]
+[node name="PlayAnim" type="Timer" parent="Animation"]
+
+[node name="TimelineSettings" type="Control" parent="Animation"]
+anchors_preset = 0
+offset_left = 1.0
+offset_top = -16.0
+offset_right = 1296.0
+offset_bottom = 28.0
+
+[node name="Fps_Counter" type="Label" parent="Animation/TimelineSettings"]
 layout_mode = 0
-offset_left = 8.0
-offset_right = 48.0
-offset_bottom = 26.0
+offset_left = 7.0
+offset_top = 16.0
+offset_right = 47.0
+offset_bottom = 42.0
 text = "FPS:"
 
-[node name="FPS" type="SpinBox" parent="Animation/Control/Label"]
-layout_mode = 0
-offset_left = 32.0
-offset_right = 96.125
-offset_bottom = 26.0
-theme = SubResource("Theme_yqv1m")
+[node name="Run_FPS" type="SpinBox" parent="Animation/TimelineSettings/Fps_Counter"]
+custom_minimum_size = Vector2(72, 0)
+layout_mode = 2
+offset_left = 31.0
+offset_top = -1.0
+offset_right = 103.0
+offset_bottom = 25.0
+max_value = 120.0
 value = 24.0
 alignment = 1
 update_on_text_changed = true
 
-[node name="Current" type="Label" parent="Animation/Control"]
+[node name="Current_Fps" type="Label" parent="Animation/TimelineSettings"]
 layout_mode = 2
-offset_left = 416.0
-offset_top = -3.0
-offset_right = 511.0
-offset_bottom = 23.0
+offset_left = 127.0
+offset_top = 15.0
+offset_right = 222.0
+offset_bottom = 41.0
 text = "Current:"
 
-[node name="SpinBox" type="SpinBox" parent="Animation/Control/Current"]
+[node name="SpinBox" type="SpinBox" parent="Animation/TimelineSettings/Current_Fps"]
 layout_mode = 0
 offset_left = 64.0
 offset_right = 147.063
 offset_bottom = 31.0
+min_value = 1.0
+max_value = 750.0
+value = 1.0
+alignment = 1
+update_on_text_changed = true
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Animation/Control"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Animation"]
 layout_mode = 2
 offset_left = 1.0
 offset_top = 28.0
-offset_right = 1288.0
+offset_right = 1296.0
 offset_bottom = 328.0
 grow_horizontal = 2
 grow_vertical = 2
-follow_focus = true
 
-[node name="Layers" type="VBoxContainer" parent="Animation/Control/ScrollContainer"]
+[node name="Anim_Layers" type="VBoxContainer" parent="Animation/ScrollContainer"]
 clip_contents = true
 layout_mode = 2
 
-[node name="HSplitContainer" type="HSplitContainer" parent="Animation/Control/ScrollContainer/Layers"]
+[node name="TSlider" parent="Animation/ScrollContainer/Anim_Layers" instance=ExtResource("5_oxkbe")]
 layout_mode = 2
 
-[node name="ColorRect" type="ColorRect" parent="Animation/Control/ScrollContainer/Layers/HSplitContainer"]
-custom_minimum_size = Vector2(70, 0)
+[node name="TLayer" parent="Animation/ScrollContainer/Anim_Layers" instance=ExtResource("6_yjky3")]
 layout_mode = 2
-
-[node name="Frame_Grid" parent="Animation/Control/ScrollContainer/Layers/HSplitContainer" instance=ExtResource("6_nfxis")]
-layout_mode = 2
-
-[node name="TLayer" parent="Animation/Control/ScrollContainer/Layers" instance=ExtResource("6_yjky3")]
-layout_mode = 2
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 2.5
 
 [connection signal="confirmed" from="Brush_Settings/MenuButton/FileDialog" to="Brush_Settings/MenuButton" method="_on_file_dialog_confirmed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Animation/PlayAnim" to="." method="_on_timer_timeout"]
