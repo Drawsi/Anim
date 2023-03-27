@@ -19,14 +19,16 @@ func _process(_delta):
 	$Slider.value = Global.current_frame 
 
 func _input(_event):
-	var _next  = Input.is_action_pressed("next")
-	var _previous  = Input.is_action_pressed("previous")
+	var _next  = Input.is_action_just_pressed("next")
+	var _fnext  = Input.is_action_pressed("next")
+	var _previous  = Input.is_action_just_pressed("previous")
+	var _fprevious = Input.is_action_pressed("previous")
 	var _play  = Input.is_action_pressed("play")
 	
 			#Moving thru frames
-	if _next:
+	if _next or _fnext:
 		$Slider.value = $Slider.value + 1
-	if _previous:
+	if _previous or _fprevious:
 		$Slider.value = $Slider.value - 1
 	if _play:
 		stop = !stop

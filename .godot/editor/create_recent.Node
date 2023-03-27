@@ -1,8 +1,8 @@
+Label
+ColorRect
 Timer
 Control
 Container
-ColorRect
-Label
 HSlider
 HScrollBar
 HSplitContainer

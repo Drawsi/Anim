@@ -60,10 +60,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -272.0
-offset_top = -260.0
-offset_right = -40.0
-offset_bottom = 252.0
+offset_left = -544.0
+offset_top = -458.0
+offset_right = -112.0
+offset_bottom = 86.0
 grow_horizontal = 0
 grow_vertical = 2
 color_modes_visible = false
@@ -82,12 +82,25 @@ rounded = true
 tick_count = 5
 ticks_on_borders = true
 
+[node name="Label" type="Label" parent="Brush_Settings"]
+layout_mode = 0
+offset_left = 1344.0
+offset_top = 560.0
+offset_right = 1528.0
+offset_bottom = 616.0
+theme_override_fonts/font = ExtResource("4_wxax8")
+theme_override_font_sizes/font_size = 40
+text = "Q-new frame; W-delete frame
+A-backwards; S-forward
+Z-erase last line"
+
 [node name="DrawingArea" type="SubViewportContainer" parent="."]
 custom_minimum_size = Vector2(1280, 720)
 offset_left = 16.0
 offset_top = 16.0
 offset_right = 1296.0
 offset_bottom = 736.0
+mouse_default_cursor_shape = 3
 
 [node name="SubViewport" type="SubViewport" parent="DrawingArea"]
 handle_input_locally = false
@@ -151,6 +164,7 @@ min_value = 1.0
 max_value = 750.0
 value = 1.0
 alignment = 1
+editable = false
 update_on_text_changed = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Animation"]

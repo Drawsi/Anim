@@ -13,6 +13,10 @@ var redo_size = 15
 @onready var tab_container = $"../../../.."
 @onready var brush_settings = $"../../../Brush_Settings"
 
+func _ready():
+	var random_color = Color(randf(), randf(), randf())
+	$ColorRect.color = random_color
+
 func _input(event):
 	_lifo()
 	var brush_color = brush_settings.get_node("BrushColor").color
