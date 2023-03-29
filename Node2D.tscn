@@ -11,13 +11,10 @@
 
 [node name="Brush_Settings" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-grow_horizontal = 2
-grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Brush_Settings"]
 layout_mode = 1
@@ -58,10 +55,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -464.0
-offset_top = -418.0
-offset_right = -72.0
-offset_bottom = 126.0
+offset_left = -584.0
+offset_top = -428.0
+offset_right = -264.0
+offset_bottom = 116.0
 grow_horizontal = 0
 grow_vertical = 2
 color_modes_visible = false
@@ -96,8 +93,8 @@ Z-erase last line"
 custom_minimum_size = Vector2(1280, 720)
 offset_left = 16.0
 offset_top = 16.0
-offset_right = 1296.0
-offset_bottom = 736.0
+offset_right = 1924.0
+offset_bottom = 1096.0
 mouse_default_cursor_shape = 3
 
 [node name="SubViewport" type="SubViewport" parent="DrawingArea"]

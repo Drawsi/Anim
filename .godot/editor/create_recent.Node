@@ -1,3 +1,4 @@
+HSplitContainer
 Label
 ColorRect
 Timer
@@ -5,7 +6,6 @@ Control
 Container
 HSlider
 HScrollBar
-HSplitContainer
 HBoxContainer
 SpinBox
 TextureRect
