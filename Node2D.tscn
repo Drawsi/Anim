@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://bmit6xykpck7u"]
+[gd_scene load_steps=7 format=3 uid="uid://bmit6xykpck7u"]
 
-[ext_resource type="Script" path="res://Scripts/Changes.gd" id="1_70di4"]
 [ext_resource type="Script" path="res://Scripts/MenuButton.gd" id="3_vfdue"]
 [ext_resource type="PackedScene" uid="uid://b238swtg4xiqq" path="res://FrameView.tscn" id="4_0q5o4"]
 [ext_resource type="FontFile" uid="uid://bywegilh4yodo" path="res://IMPACT.TTF" id="4_wxax8"]
@@ -9,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://dt3obothpbm14" path="res://t_layer.tscn" id="6_yjky3"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_70di4")
 
 [node name="Brush_Settings" type="Control" parent="."]
 layout_mode = 3
@@ -60,10 +58,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -544.0
-offset_top = -458.0
-offset_right = -112.0
-offset_bottom = 86.0
+offset_left = -464.0
+offset_top = -418.0
+offset_right = -72.0
+offset_bottom = 126.0
 grow_horizontal = 0
 grow_vertical = 2
 color_modes_visible = false
