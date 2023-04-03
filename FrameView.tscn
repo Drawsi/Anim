@@ -4,10 +4,3 @@
 
 [node name="1" type="Node2D"]
 script = ExtResource("1_hhvgj")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-offset_left = 128.0
-offset_top = 72.0
-offset_right = 168.0
-offset_bottom = 112.0

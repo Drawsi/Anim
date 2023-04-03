@@ -4,6 +4,8 @@ extends HSplitContainer
 @export var self_name = "Layer"
 var empty = load("res://Frame_Icons/empty.png")
 var new = load("res://Frame_Icons/new.png")
+var neww = load("res://Frame_Icons/neww.png")
+var nnew = load("res://Frame_Icons/nnew.png")
 var reuse = load("res://Frame_Icons/reuse.png")
 
 func _ready():
@@ -11,6 +13,6 @@ func _ready():
 
 func _input(_event):
 	if Input.is_action_just_pressed("new_frame"):
-		$Spread.get_child(Global.current_frame-1).set_texture_normal(new)
+		$Spread.get_child(Global.current_frame-1).set_texture_normal(nnew)
 	if Input.is_action_just_pressed("delete_frame"):
 		$Spread.get_child(Global.current_frame-1).set_texture_normal(empty)

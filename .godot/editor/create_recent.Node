@@ -1,3 +1,5 @@
+Line2D
+Button
 HSplitContainer
 Label
 ColorRect
@@ -24,4 +26,3 @@ VSlider
 Node2D
 TabBar
 TileMap
-Line2D

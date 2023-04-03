@@ -13,7 +13,7 @@ config_version=5
 config/name="Drawing"
 run/main_scene="res://Node2D.tscn"
 config/features=PackedStringArray("4.0")
-config/icon="res://icon.png"
+config/icon="res://app_icon.png"
 
 [autoload]
 
