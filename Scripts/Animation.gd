@@ -51,9 +51,9 @@ func _sort_frames():
 	
 func _onion():
 	#	Onion-Skin
-	if verify:
-		var prev
-		if Global.current_frame>subview.get_child_count():
+	#if verify:
+var prev
+if Global.current_frame>subview.get_child_count():
 			prev = subview.get_child(Global.current_frame-2)
 			prev.visible = true
 			prev.set_modulate(Color('626fff'))#ffffff
