@@ -65,6 +65,15 @@ func _onion():
 			break
 
 func _inviz():
+""" 
+for i in range(Global.current_frame): 
+   var is_last = subview.find_child(str(Global.current_frame-i),true,false) 
+if is_last: 
+  prev = is_last 
+  is_last.visible = true 
+  is_last.set_modulate(Color('626fff')) 
+                         break 
+Add this here✓"""
 	for i in subview.get_children():
 		i.set_modulate(Color('ffffff'))
 		if i.name==str(Global.current_frame):
