@@ -1,10 +1,11 @@
+ColorRect
+VBoxContainer
+Control
 Line2D
 Button
 HSplitContainer
 Label
-ColorRect
 Timer
-Control
 Container
 HSlider
 HScrollBar
@@ -14,7 +15,6 @@ TextureRect
 TextureButton
 VSeparator
 LineEdit
-VBoxContainer
 ScrollContainer
 CanvasLayer
 ReferenceRect

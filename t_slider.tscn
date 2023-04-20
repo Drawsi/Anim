@@ -13,7 +13,7 @@ script = ExtResource("1_ky1ts")
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-color = Color(0.101961, 0.101961, 0.101961, 1)
+color = Color(0.101961, 0.101961, 0.101961, 0)
 
 [node name="Slider" type="HSlider" parent="."]
 layout_mode = 2

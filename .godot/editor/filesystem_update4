@@ -1,4 +1,7 @@
 res://default_env.tres
-res://Node2D.tscn
+res://t_layer.tscn
 res://Scripts/Changes.gd
+res://Node2D.tscn
+res://t_slider.tscn
 res://Scripts/Animation.gd
+res://t_slider.gd
