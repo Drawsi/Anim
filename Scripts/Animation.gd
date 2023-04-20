@@ -72,4 +72,3 @@ func _onionskin_pp():
 		else:
 			i.visible = false
 			i.set_process_input(false)
-
