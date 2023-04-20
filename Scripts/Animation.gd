@@ -50,41 +50,29 @@ func _sort_frames():
 	for node in sorted_nodes:
 		subview.add_child(node)
 	#subview.print_tree_pretty()
+
+func _on_onion_skin_toggled(_button_pressed):
+	le_onion = !le_onion
 	
-func _onion():
-	#	Onion-Skin
-	var children_nr = subview.get_child_count()
-	var _frame_between =  Global.current_frame<int(str(subview.get_child(children_nr-1).name))
-
-	for i in range(Global.current_frame):
-		var is_last = subview.find_child(str(Global.current_frame-i),true,false)
-		if is_last:
-			prev = is_last
-			is_last.visible = true
-			is_last.set_modulate(Color('626fff'))
+func _onionskin_pp():
+	var prev = subview.get_child(0)
+	"""Checks all the possible frames to find a previous"""
+	for k in range(1,Global.current_frame):
+		var before = subview.find_child(str(Global.current_frame-k),true,false)
+		if before:
+			prev = before
+			print(prev)
 			break
-
-func _inviz():
-""" 
-for i in range(Global.current_frame): 
-   var is_last = subview.find_child(str(Global.current_frame-i),true,false) 
-if is_last: 
-  prev = is_last 
-  is_last.visible = true 
-  is_last.set_modulate(Color('626fff')) 
-                         break 
-Add this here✓"""
+		
 	for i in subview.get_children():
-		i.set_modulate(Color('ffffff'))
 		if i.name==str(Global.current_frame):
-			i.visible = true
-			i.set_process_input(true)
-		elif i.name==prev.name:
 			prev.visible = true
 			prev.set_modulate(Color('626fff'))
+			i.visible = true
+			i.set_process_input(true)
+			i.set_modulate(Color('ffffff'))
 		else:
 			i.visible = false
 			i.set_process_input(false)
 
-func _on_onion_skin_toggled(_button_pressed):
-	le_onion = !le_onion
+
