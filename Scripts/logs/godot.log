@@ -1,0 +1,17 @@
+Godot Engine v3.3.2.stable.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: Radeon RX 580 Series
+OpenGL ES Batching: ON
+ 
+**ERROR**: ConfigFile parse error at D:/Godot/TopDown/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+   At: core/io/config_file.cpp:296:_parse() - ConfigFile parse error at D:/Godot/TopDown/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+Project is missing: D:/Godot/BIOINF-Proiect/project.godot
+**ERROR**: ConfigFile parse error at D:/Godot/Bioinformatica/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+   At: core/io/config_file.cpp:296:_parse() - ConfigFile parse error at D:/Godot/Bioinformatica/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+Project is missing: C:/Users/Emanuel/Desktop/Vlad-UX/project.godot
+Project is missing: D:/Godot/Racing/project.godot
+**ERROR**: ConfigFile parse error at D:/Godot/Cernavoda/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+   At: core/io/config_file.cpp:296:_parse() - ConfigFile parse error at D:/Godot/Cernavoda/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+**ERROR**: ConfigFile parse error at D:/Godot/Drawing/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+   At: core/io/config_file.cpp:296:_parse() - ConfigFile parse error at D:/Godot/Drawing/project.godot:7: Unexpected identifier: 'PackedStringArray'..
+**ERROR**: Condition "default_certs != __null" is true.
+   At: modules/mbedtls/crypto_mbedtls.cpp:201:load_default_certificates() - Condition "default_certs != __null" is true.
