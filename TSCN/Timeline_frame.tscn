@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnddq3ecmqc5k"]
+
+[ext_resource type="Texture2D" uid="uid://dgddmt5833280" path="res://Frame_Icons/empty.png" id="1_koubj"]
+[ext_resource type="Script" path="res://Scripts/IndividualFrame.gd" id="2_r3c46"]
+
+[node name="Frame" type="TextureButton"]
+modulate = Color(0.32549, 0.32549, 0.32549, 1)
+texture_normal = ExtResource("1_koubj")
+script = ExtResource("2_r3c46")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

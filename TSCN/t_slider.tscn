@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bw0kgyu2tyfk"]
+[gd_scene load_steps=3 format=3]
 
-[ext_resource type="Script" path="res://t_slider.gd" id="1_ky1ts"]
-[ext_resource type="PackedScene" uid="uid://y6ahotihj88w" path="res://frame_grid.tscn" id="1_tc3f8"]
+[ext_resource type="Script" path="res://Scripts/t_slider.gd" id="1_ky1ts"]
+[ext_resource type="PackedScene" uid="uid://y6ahotihj88w" path="res://TSCN/frame_grid.tscn" id="1_tc3f8"]
 
 [node name="TSlider" type="HSplitContainer"]
 offset_right = 86.0

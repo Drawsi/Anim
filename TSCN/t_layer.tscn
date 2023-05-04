@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt3obothpbm14"]
+
+[ext_resource type="Script" path="res://Scripts/TLayer.gd" id="1_yms1s"]
+[ext_resource type="PackedScene" uid="uid://dnddq3ecmqc5k" path="res://TSCN/Timeline_frame.tscn" id="2_dulfn"]
+
+[node name="TLayer" type="HSplitContainer"]
+dragger_visibility = 1
+script = ExtResource("1_yms1s")
+
+[node name="Layer_Name" type="LineEdit" parent="."]
+layout_mode = 2
+placeholder_text = "Layer1"
+
+[node name="Spread" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="1" parent="Spread" instance=ExtResource("2_dulfn")]
+layout_mode = 2
