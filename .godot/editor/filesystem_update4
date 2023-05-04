@@ -7,3 +7,4 @@ res://Scripts/Animation.gd
 res://Scripts/TLayer.gd
 res://TSCN/Timeline_frame.tscn
 res://Scripts/t_slider.gd
+res://Scripts/IndividualFrame.gd
