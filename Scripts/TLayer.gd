@@ -15,9 +15,9 @@ func _ready():
 		pass
 
 func _input(_event):
-	var new = Input.is_action_just_pressed("new_frame")
-	var empty = Input.is_action_just_pressed("delete_frame")
-	if new:
+	var new_f = Input.is_action_just_pressed("new_frame")
+	var empty_f = Input.is_action_just_pressed("delete_frame")
+	if new_f:
 		$Spread.get_child(Global.current_frame-1).set_texture_normal(new)
-	if empty:
+	if empty_f:
 		$Spread.get_child(Global.current_frame-1).set_texture_normal(empty)

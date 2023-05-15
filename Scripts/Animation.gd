@@ -12,7 +12,7 @@ var new = load("res://Frame_Icons/new.png")
 
 var is_frame_node
 var is_frame
-var le_onion = false
+var onion_on = false
 
 func _ready():
 	_sort_frames()
@@ -49,9 +49,8 @@ func _input(_event):
 	if is_frame_node and !is_frame:
 		is_frame_node.queue_free()
 
-
-func _on_onion_skin_toggled(_button_pressed):
-	le_onion = !le_onion
+func _on_onion_skin_pressed():
+	onion_on = !onion_on
 
 func _onionskin_pp():
 	var prev
@@ -63,16 +62,16 @@ func _onionskin_pp():
 		var before = subview.find_child(str(Global.current_frame-k),true,false)
 		if before:
 			prev = before
-			print(prev)
 			break
 		
 	for i in subview.get_children():
 		if i.name==str(Global.current_frame):
-			prev.visible = true
-			prev.set_modulate(Color('626fff'))
 			i.visible = true
 			i.set_process_input(true)
 			i.set_modulate(Color('ffffff'))
 		else:
 			i.visible = false
 			i.set_process_input(false)
+		if onion_on:
+			prev.visible = true
+			prev.set_modulate(Color('626fff'))

@@ -1,7 +1,8 @@
 ColorRect
+Line2D
+HBoxContainer
 VBoxContainer
 Control
-Line2D
 Button
 HSplitContainer
 Label
@@ -9,7 +10,6 @@ Timer
 Container
 HSlider
 HScrollBar
-HBoxContainer
 SpinBox
 TextureRect
 TextureButton

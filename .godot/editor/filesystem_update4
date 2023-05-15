@@ -1,10 +1,6 @@
 res://default_env.tres
-res://TSCN/t_layer.tscn
-res://Scripts/Changes.gd
-res://Scripts/GLOBAL.gd
 res://TSCN/Node2D.tscn
+res://Scripts/Changes.gd
 res://Scripts/Animation.gd
-res://Scripts/TLayer.gd
-res://TSCN/Timeline_frame.tscn
-res://Scripts/t_slider.gd
-res://Scripts/IndividualFrame.gd
+res://Scripts/FP.gd
+res://TSCN/SubViewport.gd
