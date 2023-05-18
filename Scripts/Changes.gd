@@ -3,7 +3,7 @@ extends Node2D
 @onready var tlayer = $Animation/ScrollContainer/Anim_Layers/TLayer/Spread 
 @export var brush_color = Color(1,1,1)
 @export var brush_size = 10
-var f = preload("res://FrameView.tscn")
+var f = preload("res://TSCN/FrameView.tscn")
 var empty = load("res://Frame_Icons/empty.png")
 var new = load("res://Frame_Icons/new.png")
 var last_frame

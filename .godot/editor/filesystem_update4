@@ -2,5 +2,5 @@ res://default_env.tres
 res://TSCN/Node2D.tscn
 res://Scripts/Changes.gd
 res://Scripts/Animation.gd
-res://Scripts/FP.gd
-res://TSCN/SubViewport.gd
+res://Scripts/GLOBAL.gd
+res://Scripts/t_slider.gd

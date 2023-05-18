@@ -3,7 +3,6 @@ extends HSplitContainer
 var label = Label.new()
 var last = 60
 var pos = 0
-var stop = false
 var all_frames = 750
 
 func _ready():
@@ -31,12 +30,12 @@ func _input(_event):
 	if _previous or _fprevious:
 		$Slider.value = $Slider.value - 1
 	if _play:
-		stop = !stop
+		Global.state_IDLE = !Global.state_IDLE
 		$Play.wait_time = 1.0/Global.set_fps
 		$Play.start()
 	
 func _on_play_timeout():
-	if $Slider.value < all_frames-$Slider.value and stop:
+	if $Slider.value < all_frames-$Slider.value and !Global.state_IDLE:
 		$Slider.value = $Slider.value + 1
 		$Play.start()
 	else:
