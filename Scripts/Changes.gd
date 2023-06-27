@@ -26,6 +26,7 @@ func _process(_delta):
 	#	Deletes the frame
 	if find and !verify:
 		find.queue_free()
+
 func _inviz():
 	for i in $DrawingArea/SubViewport.get_children():
 		if i.name==str(Global.current_frame):

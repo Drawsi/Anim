@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://qbjpv8a60bph"]
 
 [ext_resource type="Script" path="res://Scripts/t_slider.gd" id="1_ky1ts"]
 [ext_resource type="PackedScene" uid="uid://y6ahotihj88w" path="res://TSCN/frame_grid.tscn" id="1_tc3f8"]
@@ -27,6 +27,7 @@ layout_mode = 2
 offset_right = 12421.0
 
 [node name="Play" type="Timer" parent="."]
+wait_time = 0.001
 
 [connection signal="value_changed" from="Slider" to="." method="_on_slider_value_changed"]
 [connection signal="timeout" from="Play" to="." method="_on_play_timeout"]

@@ -77,7 +77,7 @@ func _onionskin_pp():
 
 func _frame_color():
 	for i in subview.get_children():
-		if Global.state_IDLE:
+		if !Global.state_playing:
 			if i.name==str(Global.current_frame):
 				i.visible = true
 				i.set_process_input(true)

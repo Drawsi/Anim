@@ -22,21 +22,21 @@ func _input(_event):
 	var _fnext  = Input.is_action_pressed("next")
 	var _previous  = Input.is_action_just_pressed("previous")
 	var _fprevious = Input.is_action_pressed("previous")
-	var _play  = Input.is_action_pressed("play")
-	
+	var _play  = Input.is_action_just_pressed("play")
 			#Moving thru frames
 	if _next or _fnext:
 		$Slider.value = $Slider.value + 1
 	if _previous or _fprevious:
 		$Slider.value = $Slider.value - 1
 	if _play:
-		Global.state_IDLE = !Global.state_IDLE
+		print(Global.set_fps) 
+		Global.state_playing = !Global.state_playing
 		$Play.wait_time = 1.0/Global.set_fps
 		$Play.start()
-	
+
 func _on_play_timeout():
-	if $Slider.value < all_frames-$Slider.value and !Global.state_IDLE:
-		$Slider.value = $Slider.value + 1
+	if Global.current_frame < all_frames and Global.state_playing:
+		Global.set_cf(Global.current_frame + 1)
 		$Play.start()
 	else:
 		$Play.stop()

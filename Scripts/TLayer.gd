@@ -14,7 +14,7 @@ func _ready():
 		$Spread.add_child(f)
 		pass
 
-func _input(_event):
+func _unhandled_input(_event):
 	var new_f = Input.is_action_just_pressed("new_frame")
 	var empty_f = Input.is_action_just_pressed("delete_frame")
 	if new_f:
